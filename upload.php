@@ -20,7 +20,7 @@ function deleteAll($dir, $t, $remove = false) {
    }
  }
 
- deleteAll("files/", "20");
+ deleteAll("files/", "10800");
  
 if(isset($_FILES['file']['name'])){
    $filename = $_FILES['file']['name'];
@@ -50,7 +50,7 @@ if(isset($_FILES['file']['name'])){
          // deleteExp($location);
 //         $url = (strtolower(substr($_SERVER["SERVER_PROTOCOL"],0,strpos( $_SERVER["SERVER_PROTOCOL"],'/'))))."://" .$_SERVER['HTTP_HOST'] . dirname($_SERVER["PHP_SELF"]).'/'.str_replace(' ', '%20', $location);;
 
-         $url = "http://" .$_SERVER['HTTP_HOST'] . dirname($_SERVER["PHP_SELF"]).'/'.str_replace(' ', '%20', $location);;
+         $url = "https://" .$_SERVER['HTTP_HOST'] . dirname($_SERVER["PHP_SELF"]).'/'.str_replace(' ', '%20', $location);;
          $response = array(
             'url' => $url,
             'size' => $fileSize,
